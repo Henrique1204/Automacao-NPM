@@ -1,0 +1,4 @@
+npm install pacote -- Instala o pacote
+npm update pacote -- Atualiza o pacote
+npm uninstall pacote -- Desinstala o pacote
+""    ""       "" -g -- Faz tudo globalmente

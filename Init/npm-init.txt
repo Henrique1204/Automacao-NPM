@@ -1,0 +1,2 @@
+npm init -- Inicia o arquivo pakcjson
+npm init -y -- Inicia o arquivo respondendo sim pra tudo

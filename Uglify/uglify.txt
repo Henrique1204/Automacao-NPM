@@ -1,0 +1,8 @@
+uglify nomeArquivo -- gera no terminal o arquivo uglify
+
+uglify nomeArquivo  -c -- Faz o uglify do arquivo, pode usar outros parâmetros, -c é referen a compress, esse comando só funciona caso esteja instalado globalmente
+
+
+node_modules/.bin/uglifyjs -- quando não está instalado globalmente é preciso escrever o caminho relativo para chegar ao arquivo do comando
+
+uglifyjs nomeArquivo -c -o nomeArquivoNovo -- faz o uglify do arquivo e renomeia ele para o que você passar como parãmetro, -o refere a output

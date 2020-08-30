@@ -1,0 +1,5 @@
+Você pode adicionar um atalho para o comando que você vai usar no terminal, é só adicionar um script dentro do package.json, no campo script.
+
+"minclip": "node_modules/.bin/uglifyjs clipboard.js -c -o clipboard-min.js"
+
+basta digitar "minclip" no termial para executar o script.
