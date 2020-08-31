@@ -1,0 +1,17 @@
+npm install gulp -g -- Para instalar ele globalmente.
+
+npm install gulp -- Para usar ele no projeto.
+
+gulpfile.js -- Para usar o gulp é preciso criar esse arquivo e configurar ele.
+
+npm install gulp-sass -- Para instalar o gulp sass.
+
+npm i gulp-autoprefixer -- Instala o autoprefixer, pra gerar os -webkit- e para manter o código suportável em versãos antigas de browsers
+
+npm install browser-sync -- Instala o plugin para dar refresh no browser ao salvar o arquivo
+
+npm install gulp-concat -- Instala o plugin para juntar arquivos
+
+npm install --save-dev gulp-babel @babel/core @babel/preset-env -- Instala o babel no gulp
+
+npm i gulp-uglify -- Para instalar o uglify do gulp 
