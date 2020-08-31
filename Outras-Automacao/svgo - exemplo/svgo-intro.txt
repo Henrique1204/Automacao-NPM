@@ -1,0 +1,3 @@
+npm install svgo -g -- Instala o svgo globalmante
+
+svgo pastaEArquivos -o localDeDestino -- otimiza os svgs

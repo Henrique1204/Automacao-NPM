@@ -1,0 +1,3 @@
+npm intall jimp -- Instala o jimp
+
+node jimp.js -- Executa o jimp

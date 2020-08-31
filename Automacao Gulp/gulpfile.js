@@ -11,7 +11,7 @@ const concat = require("gulp-concat");
 // Import do babel do gulp
 const babel = require("gulp-babel");
 // Import do uglify do gulp
-const uglify = require("gulp-uglify");
+const uglify = require('gulp-uglify-es').default;;
 
 function compilarSass() {
     /*
@@ -39,7 +39,7 @@ gulp sass -- executa a tarefa no termial
 exports.compilarSass = compilarSass;
 
 // Função para juntar o JavaScript
-function gulpJS() {
+function mainjs() {
     /*
     concat("nomeDoArquivoFinal") -- Junta os arquivos
     babel({ presets: ["@babel/env"] }) -- Faz o plyfil do javascript, presets define ao que ele vai dar suporte
@@ -52,8 +52,8 @@ function gulpJS() {
     .pipe(browserSync.stream());
 }
 
-// gulp.task("mainjs", gulpJS); -- Sintaxe antiga
-exports.gulpJS = gulpJS;
+// gulp.task("mainjs", mainjs); -- Sintaxe antiga
+exports.mainjs = mainjs;
 
 // Iniciar um servidor local na porta 3000
 function browser() {
@@ -79,7 +79,7 @@ function watch() {
     */
     
     gulp.watch("css/scss/**/*.scss", compilarSass);
-    gulp.watch("js/**/*.js", gulpJS);
+    gulp.watch("js/**/*.js", mainjs);
     gulp.watch("*.html").on("change", browserSync.reload);
 }
 
@@ -87,4 +87,4 @@ function watch() {
 exports.watch = watch;
 
 // Default é a tarefa padrão que é executa apenas ao digitar gulp
-exports.default = gulp.parallel(compilarSass, watch, browser, gulpJS);
+exports.default = gulp.parallel(compilarSass, watch, browser, mainjs);

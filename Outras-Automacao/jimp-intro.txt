@@ -1,0 +1,1 @@
+npm install jimp -- Instala o jimp

@@ -14,4 +14,4 @@ npm install gulp-concat -- Instala o plugin para juntar arquivos
 
 npm install --save-dev gulp-babel @babel/core @babel/preset-env -- Instala o babel no gulp
 
-npm i gulp-uglify -- Para instalar o uglify do gulp 
+npm i gulp-uglify-es -- Para instalar o uglify-es do gulp 
